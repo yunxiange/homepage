@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+.sideBar { float:left; width:174px; margin-right:20px; padding:5px; padding-top:0; }
+.content { float:right; width:756px; }
+.sn { background-color:#35c5e8; }
+.snTop { background:url(images/lnh1.gif) no-repeat; height:12px; font-size:0px; }
+.snBottom { background:url(images/lnb1.gif) no-repeat; height:13px; font-size:0px; }
+.sns { margin:10px; color:#116ab9; }
+.sns ul li { width:135px; padding-left:19px; border-bottom:1px solid #6ecbe2; }
+.sns ul li a { display:block; }
+.snsNormal { background:url(images/triangle.gif) no-repeat 8px 8px; }
+.snsActive { background:url(images/lnactive.gif) no-repeat 0 0; }
+.sns ul li:hover ul li { background:none; }
+.sns ul li a { height:23px; line-height:23px; color:#116ab9; }
+.sns ul li ul li { width:125px; border-top:1px solid #6ecbe2; border-bottom:none; background:none; margin-left:-20px; padding-left:30px; }
+.sns ul li ul li a { height:23px; line-height:23px; color:#116ab9; display:block; }
+.intro { margin-top:20px; background-color:#fff; }
+.intros { border-left:1px solid #8dcad9; border-right:1px solid #8dcad9; height:110px; padding:5px; }
+.introTop { background:url(images/lnh2.gif) no-repeat; height:10px; font-size:0px; }
+.introBottom { background-image:url(images/lnb2.gif); background-repeat:no-repeat; height:10px; font-size:0px; }
+.intros ul { overflow:hidden; padding:5px; }
+.intros ul li { display:inline; width:30px; height:23px; line-height:23px; float:left; margin-left:10px; padding-left:30px; margin-bottom:5px; }
+.intros2 { height:1px; border-top:1px solid #d7e0df; clear:both; }
+.intros3 { text-align:center; margin-left:25px; padding-left:5px; height:30px; line-height:30px; color:#faa26f; _margin-top:-5px; }
+.intro1, .intro2, .intro3, .intro4, .intro5 { background-image:url(images/si.gif); background-repeat:no-repeat; }
+.intro1 { background-position:0 0; }
+.intro2 { background-position:0 -26px; }
+.intro3 { background-position:0 -51px; }
+.intro4 { background-position:0 -76px; }
+.intro5 { background-position:0 -102px; }
+.prompt { font-size:14px; margin-bottom:10px; }
+.prompt a:hover { text-decoration:underline; }
+.article { border:2px solid #d2d2d2; padding:10px; background-color:#fff; overflow:hidden; }
+.article h4 { font-size:14px; text-align:center; border-bottom:1px solid #d2d2d2; padding:5px; }
+.breif { text-align:center; letter-spacing:2px; }
+.breif span{display:inline-block; margin-right:4px;}
+.pcontent { text-indent:2em; width:732px; word-wrap: break-word; word-break: break-all; margin-top:10px; line-height:20px; }

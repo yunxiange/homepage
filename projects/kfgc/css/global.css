@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, div, p, ul,h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px;}
+body{background-color:#f1f1f1; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#000; }
+img { border:none; }
+ul { list-style:none;}
+a{ text-decoration:none; color:#000;}
+#header { width:100%; height:82px; background:url(images/header.gif) repeat-x;}
+.nav { width:960px; margin:0 auto; height:49px;}
+.nav ul { padding-top:8px; height:42px; width:532px; overflow:hidden;}
+.nav ul li { float:left; width:76px; height:42px;}
+.nav ul li a { display:block; height:42px; line-height:42px; text-align:center; width:76px; color:#fff; }
+.nav ul li a:hover { background:url(images/menu_active.gif) no-repeat; color:#0060af; }
+.nav ul li a.current { background:url(images/menu_active.gif) no-repeat; color:#0060af; }
+.subNav {width:960px; height:40px; _height:34px; position:relative; margin:0 auto;}
+.subm1{position:absolute; left:50px; top:0px;}
+.subm2{position:absolute; left:120px; top:0px;}
+.mlist ul{overflow:hidden;}
+.mlist ul li{ float:left; width:50px; height:35px; margin-right:5px;}
+.mlist ul li a{display:block; height:35px; line-height:35px; color:#0060af;}
+.mlist ul li a:hover{text-decoration:underline;}
+.banner { background-color:#e8eeee; height:280px; width:100%; border-top:2px solid #c5cbcb; border-bottom:2px solid #c5cbcb; margin-bottom:10px;}
+.banner p{width:960px; padding:5px; margin:0 auto;}
+.banner img {padding:5px; height:260px; border:1px solid #d2d2d2; background-color:#fff; display:block; width:950px;}
+.clear:after{ clear:both; height:0px; content: "."; display:block; visibility:hidden;} .clear{*height:1%;}
+#container { width:960px; margin:0 auto;}
+#footer { width:100%; height:55px; background:url(images/foot.gif) repeat-x; margin-top:10px;}
+#footer p{ width:960px; height:55px; line-height:55px; margin:0 auto; text-align:center; word-spacing:2px;}

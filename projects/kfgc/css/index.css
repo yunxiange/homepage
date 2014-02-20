@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.intro { width:630px; height:358px; float:left; margin-right:10px; padding:10px; border:2px solid #d2d2d2; background-color:#fff; }
+.brief{ height:49px; border-bottom:1px solid #d2d2d2; background-color:#f5f5f5; }
+.introduce { float:left; text-indent:-9999px; width:125px; height:37px; background:url(images/intro.gif) no-repeat; margin-left:5px; margin-top:8px; }
+.more { float:right; margin-right:5px; margin-top:15px; width:30px; height:25px; font-size:12px; }
+/*.item ul li { height:25px; padding-left:20px; background:url(images/dot.gif) no-repeat 0px 8px; margin-left:10px; }
+.item ul li a { display:block; line-height:25px; height:25px; font-size:14px;}*/
+.wrap{margin:10px; padding-top:10px;}
+.wrap p{text-indent:2em; line-height:30px; font-size:16px;}
+.slide { width:290px; height:381px; float:left; }
+.slidePic { position:relative; width:290px; height:381px; }
+.picture { position:absolute; top:0px; left:0px; }
+.picture ul,.picture ul li{ position:absolute;}
+.list { position:absolute; top:340px; left:210px; }
+.list a { display:inline-block; padding:2px; border:1px solid #0060af; margin-right:2px; height:10px; width:10px; line-height:10px; text-align:center; z-index:10;}
+.active { background-color:#0060af; }

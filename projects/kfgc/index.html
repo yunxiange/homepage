@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="description" content="康复工程，康复学，康复工程学" name="keywords" />
+<link type="text/css" href="css/global.css" rel="stylesheet" />
+<link type="text/css" href="css/index.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<title>康复工程学</title>
+</head>
+<body>
+<div id="header">
+  <div class="nav">
+    <ul>
+        <li><a class="current" href="./index.html" id="m0">首页</a></li>
+      <li><a href="#" id="m1">专题知识</a></li>
+      <li><a href="#" id="m2">相关知识</a></li>
+      <li><a href="#" id="m3">视频资料</a></li>
+      <li><a href="#" id="m4">资料下载</a></li>
+      <li><a href="#" id="m5">网上自测</a></li>
+      <li><a href="#" id="m6">交流讨论</a></li>
+    </ul>
+  </div>
+  <div class="subNav">
+    <div class="subm1 mlist" style="display:none;">
+      <ul>
+        <li><a href="#">课程简介</a></li>
+        <li><a href="#">教学大纲</a></li>
+        <li><a href="#">教案</a></li>
+      </ul>
+    </div>
+    <div class="subm2 mlist" style="display:none;">
+      <ul>
+        <li><a href="#">医疗器具</a></li>
+        <li><a href="#">医疗环境</a></li>
+        <li><a href="#">新技术</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" language="javascript" src="js/nav.js"></script>
+<div class="banner">
+  <p><img src="images/banner.gif" /></p>
+</div>
+<div id="container">
+  <div class="intro">
+    <div class="brief clear">
+      <h2 class="introduce">康复工程学简介</h2>
+      <p class="more"><a href="./single.html">更多</a></p>
+    </div>
+    <div class="wrap">
+      <p>随着社会经济发展、老龄化社会进程加快和疾病谱改变，人们对疾病、功能、残疾和健康等概念有了全新的认识。医学模式发生了两个重大改变，即从生物医学模式向“生物－心理－社会”模式的转变，从疾病治疗医学模式向“预防－保健－治疗－康复”医学模式转变，生物医学工程服务于医学，顺应着医学的发展和模式变化，同时也为这—转变创造必要的技术条件，促进转变。随着科技的飞速发展，与医学的结合日益深入，做为生物医学工程分支的康复工程也取得了巨大的进步，吸收并利用各种高新技术，成果广泛应用于康复医学领域。</p>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="slidePic">
+      <div class="picture">
+        <ul>
+          <li style="display:block;"><img src="images/slide.gif" /></li>
+          <li style="display:none;"><img src="images/slide.gif" /></li>
+          <li style="display:none;"><img src="images/slide.gif" /></li>
+          <li style="display:none;"><img src="images/slide.gif" /></li>
+        </ul>
+      </div>
+      <div class="list"> <a class="active">1</a><a class="">2</a><a class="">3</a><a class="">4</a> </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+	$(document).ready(function(){
+	Play(".picture",".list",4000);
+	function Play(o1,o2,ms){
+		var obj1=$(o1);
+		var obj2=$(o2);
+		var ul_lis=obj1.find("ul>li");
+		var ol_lis=obj2.find("a");
+		var timer;
+		var num=0;
+		
+		auto();
+		function auto(){
+			timer=setInterval(function(){
+				 num++;
+				 if(num>=ul_lis.length){num=0;};
+				 ul_lis.fadeOut();
+				 ul_lis.eq(num).fadeIn("slow");
+				 ol_lis.attr("class","");
+				 ol_lis.eq(num).attr("class","active");
+			  },ms);
+		};
+		ol_lis.click(function(){
+			num=ol_lis.index(this);
+			ul_lis.eq(num).fadeIn();
+			ol_lis.attr("class","");
+			ol_lis.eq(num).attr("class","active");
+		});
+	};
+  });
+</script>
+  <div class="clear"></div>
+</div>
+<div id="footer">
+  <p>Copyright 2012 信息技术学院创新实践基地维护</p>
+</div>
+<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fdd1aff005bbde590f53015583a947ea3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>

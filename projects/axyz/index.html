@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="styles/global.css" />
+<link rel="stylesheet" type="text/css" href="styles/index.css"/>
+<title>爱心驿站</title>
+</head>
+<body>
+<div class="head">
+  <div id="headfott"> <span class="informat">发布信息</span> <span><a class="alertW" style="color:#000;" href="#">用户登录</a></span> </div>
+  <table>
+    <tr>
+      <td><a href="#">驿站首页</a></td>
+      <td style="width:85px;"><a href="#">团队简介</a></td>
+      <td style="width:85px;"><a href="#">志愿服务</a></td>
+      <td style="width:85px;"><a href="#">公益互动</a></td>
+      <td style="width:85px;"><a href="#">爱心捐赠</a></td>
+      <td><a href="#">联系我们</a></td>
+    </tr>
+  </table>
+</div>
+<div class="pic">
+  <object style="width:994px; height: 280px;">
+    <embed src="./banner.swf" quality="high" width="994" height="280" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" wmode="transparent"></embed>
+  </object>
+</div>
+<div class="center">
+  <div class="center_middle">
+    <div class="cen_left">
+      <div class="cen_left_up">
+        <div class="title" style=" margin-top:4px;">公益互动</div>
+        <div class="left_pic">
+          <input type="text" style="margin-left:7px;"/>
+          <a href="#" title="搜索"><img style="margin-left:118px; margin-top:6px;" src="styles/images/sousuo.gif" alt="搜索" /></a>
+        </div>
+        <div class="left_pic" style="margin-top:-1px;" title="我要留言"><a href="#"><img src="images/words.jpg" alt="我要留言" /></a></div>
+        <div class="left_pic" title="关注我们的新浪微博"><a href="#"><img src="images/weibo.jpg" alt="关注我们的新浪微博"/></a></div>
+      </div>
+      <div class="cen_left_down">
+        <div class="title">爱心服务</div>
+        <ul class="loveservice">
+          <li><a href="#">11111111111111111111</a></li>
+          <li><a href="#">11111111111111111111</a></li>
+          <li><a href="#">11111111111111111111</a></li>
+          <li><a href="#">11111111111111111111</a></li>
+          <li><a href="#">11111111111111111111</a></li>
+          <li><a href="#">11111111111111111111</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="cen_cen">
+      <div class="cen_cen_up">
+        <div  style="color: #333; font-weight:600; margin-top:0px; margin-left:42px; width:80px; height:23px; font-size:14px; text-align:center; padding-top:5px;">爱心展示</div>
+        <div class="more com_more"><a href="#">更多>></a></div>
+        <div id="container">
+          <div id="example">
+            <div id="slides">
+              <div class="slides_container"> 
+                <a href="#" title=""  target="_blank"><img src="images/slide-1.jpg" alt="Slide 1" /> </a> 
+                <a href="#" title=""  target="_blank"><img src="images/slide-2.jpg" alt="Slide 2" /> </a> 
+                <a href="#" title=""  target="_blank"><img src="images/slide-3.jpg" alt="Slide 3" /> </a> 
+                <a href="#" title=""  target="_blank"><img src="images/slide-4.jpg" alt="Slide 4" /> </a> 
+                <a href="#" title=""  target="_blank"><img src="images/slide-5.jpg" alt="Slide 5" /> </a> 
+                <a href="#" title="" target="_blank"> <img src="images/slide-6.jpg" alt="Slide 6" /> </a> 
+                <a href="#" title="" target="_blank"> <img src="images/slide-7.jpg" alt="Slide 7" /> </a> 
+              </div>
+              <a href="#" class="prev"> <img src="styles/images/arrow-prev.png" width="24" height="43" alt="Arrow Prev"> </a> 
+              <a href="#" class="next"> <img src="styles/images/arrow-next.png" width="24" height="43" alt="Arrow Next"> </a> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="script/jquery.min.js"></script>
+      <script type="text/javascript" src="script/slides.min.jquery.js"></script>
+      <script type="text/javascript">
+          $(function(){//滚动图片
+            $('#slides').slides({
+              preload: true,
+              preloadImage: 'images/loading.gif',
+              play: 5000,
+              pause: 2500,
+              hoverPause: true
+            });
+          });
+      	function setTab(m,n){ //tab选项卡
+      		var tli=document.getElementById("tabH").getElementsByTagName("li");
+      		var cli=document.getElementById("tabC").getElementsByTagName("ul");
+      		for(var i=0;i<tli.length;i++){
+      		tli[i].className=i==n?"active":"nactive";
+      		cli[i].style.display=i==n?"block":"none";
+      		}
+      	}
+      </script>
+      <div class="cen_cen_down">
+        <ul id="tabH">
+          <li class="active" onmousemove="setTab(0,0)">爱在行动</li>
+          <li class="nactive" style="margin-left:8px;" onmousemove="setTab(0,1)">心灵故事</li>
+        </ul>
+        <div id="tabC">
+          <ul class="block">
+            <li><a href="#">“弘扬北京精神学雷锋我行动”首都志愿服务启动</a><span>2012-03-17</span></li>
+            <li><a href="#">“传播科技文化—爱心电视进万家公益行动”在京启动</a><span>2012-02-29</span></li>
+            <li><a href="#">春日送暖 为榕城“重症”患者健康加油</a><span>2012-02-27</span></li>
+            <li><a href="#">互动百科启动“公益足球”助贫计划</a><span>2012-03-07</span></li>
+            <li><a href="#">“爱心助学 情暖童心 ”活动正式启动</a><span>2009-06-05</span></li>
+            <li><a href="#">“爱心书屋”工程全面启动</a><span>2009-06-05</span></li>
+            <li><a href="#">3月5日“非常6+1”城市营销活动启动</a><span>2009-02-27</span></li>
+            <p class="tabcmore com_more"><a href="#">更多爱在行动...</a></p>
+          </ul>
+          <ul style="display:none;">
+            <li><a href="#">大手牵小手 寻访吴文化</a><span>2012-02-17</span></li>
+            <li><a href="#">"心会跟爱一起走"------江苏技术</a><span>2012-02-09</span></li>
+            <li><a href="#">丛飞事迹汇编------官方版本</a><span>2012-02-07</span></li>
+            <li><a href="#">共青团深圳市委发出向丛飞学习的</a><span>2012-02-07</span></li>
+            <li><a href="#">危急关头，哑女发出生命的第一声</a><span>2011-06-05</span></li>
+            <li><a href="#">陈燕：中国第一个拿到飞机驾照</a><span>2010-06-05</span></li>
+            <li><a href="#">关爱行动:永远看重人的尊严爱的力量</a><span>2010-02-27</span></li>
+            <p class="tabcmore com_more"><a href="#">更多心灵故事...</a></p>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cen_right">
+      <div >
+        <div class="title" >团队简介</div>
+        <p style="font-size:12px; line-height:22px; width:190px; margin-left:8px; text-indent:2em;">为了共同的梦想--爱心，走进了第一个特困家庭，到今天拥有数名志愿者的<span style="color: #FFF; font-size:15px;"><b>爱心驿站</b></span>团队，以敬老、扶残、助学关怀社会弱势群体己任，积极奉献，回报社会为主题思想。走山区，跨平原，进学校，到各户，处处充满了志愿者滚烫发热的涌动激流。 </p>
+      </div>
+      <div class="cen_left_down">
+        <div class="title" style="margin-top:14px; margin-left:40px;">联系我们</div>
+        <br />
+        <table style="margin-left:16px; font-size:13px">
+          <tr style="height:26px;">
+            <td>电话:</td>
+            <td>1581335xxxx</td>
+          </tr>
+          <tr style="height:26px;">
+            <td>传真</td>
+            <td>020-88885555 </td>
+          </tr>
+          <tr style="height:26px;">
+            <td>邮箱:</td>
+            <td>yun_xxxx@163.com</td>
+          </tr>
+          <tr style="height:26px;">
+            <td>微博</td>
+            <td>爱心驿站大联盟</td>
+          </tr>
+          <tr>
+            <td style="height:26px;">联系：</td>
+            <td>肖先生</td>
+          </tr>
+          <tr style="height:26px;">
+            <td>邮编:</td>
+            <td>510006</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="foot">
+  <div class="foot_left"></div>
+  <div class="foot_right"></div>
+  <div class="property">版权所有property in copyright&nbsp;&nbsp;爱心驿站团队</div>
+</div>
+<div class="showLogBg" style="display:none; background-color: rgb(0, 0, 0); opacity: 0.4; filter:alpha(opacity=40);"></div>
+<div class="showLog" style="display:none;">
+  <div class="showLog_Top"></div>
+  <div class="showLog_content">
+    <P class="denglu">登录</P>
+    <img id="closeImg" src="styles/images/login_close.gif" />
+    <form action="#" class="form1">
+      <div class="name">
+        <label for="id">用户名</label>
+        <input type="text" id="id" class="id1" onfocus="this.className='id1Active'" onblur="this.className='id1'" />
+      </div>
+      <div class="passwd">
+        <label for="passwd">密码</label>
+        <input type="password" id="passwd" class="passwd1" onfocus="this.className='passwd1Active'" onblur="this.className='passwd1'"/>
+      </div>
+      <div class="checkV">
+        <label for="checkV">验证码</label>
+        <input type="text" id="checkV" class="checkV1" onfocus="this.className='checkV1Active'" onblur="this.className='checkV1'" />
+      </div>
+      <div class="picCheckV"> <img src="./images/yzm.bmp" style="border:none;"/><a href="#">看不清换一张</a> </div>
+      <div class="submit1">
+        <input type="submit" value="登陆" />
+      </div>
+      <div class="register">
+        <p>还没注册账号</p>
+        <p><a href="#"><img src="styles/images/login_register.gif"/></a></p>
+      </div>
+    </form>
+  </div>
+  <div class="showLog_Bottom"></div>
+</div>
+<script type="text/javascript" src="script/logDialog.js"></script>
+	<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fdd1aff005bbde590f53015583a947ea3' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

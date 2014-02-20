@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Micro Space→Web Front-End Developer</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="./styles/global.css" type="text/css">
+	<!--[if lte IE 9]>
+		<script src="./scripts/html5.js" type="text/javascript"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="auto pt_15 clearfix">
+			<h1 class="logo">Micro Space→Web Front-End Developer</h1>
+			<nav class="menu">
+				<ul class="menu_items" id="menu">
+					<li><a href="./index.html">首页<span>HOME</span></a></li>
+					<li class="current"><a href="./skill.html">技能<span>SKILL</span></a></li>
+					<li><a href="./practice.html">实践<span>PRACTICE</span></a></li>
+					<li><a href="./contact.html">联系<span>CONTACT</span></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="bg_skill">
+		<section class="auto clearfix">
+			<section class="mod bc_a col">
+				<h2 class="title">职业素养</h2>
+				<ul class="profession" id="profession">
+					<li>
+						<div class="pro_desc" style="width:100%;"><h3>学习能力</h3></div>
+						<div class="pro_progress">100%</div>
+					</li>
+					<li>
+						<div class="pro_desc" style="width:90%;"><h3>专业能力</h3></div>
+						<div class="pro_progress">90%</div>
+					</li>
+					<li>
+						<div class="pro_desc" style="width:60%;"><h3>英语能力</h3></div>
+						<div class="pro_progress">60%</div>
+					</li>
+					<li>
+						<div class="pro_desc" style="width:100%;"><h3>团队合作</h3></div>
+						<div class="pro_progress">100%</div>
+					</li>
+				</ul>
+			</section>
+			<section class="mod bc_c col">
+				<h2 class="title">HTML(5)+CSS(3)+JavaScript</h2>
+				<ul class="dot">
+					<li>熟练使用PhotoShop图像处理工具，能够对设计图精确切图</li>
+					<li>熟悉 HTML、CSS、JavaScript、DOM、XML、Ajax等跨平台技术、Jquery框架</li>
+					<li>熟练使用CSS进行常见布局：两列布局、三列布局、宽度自适应布局等</li>
+					<li>熟悉HTML5、CSS3，能用CSS3实现各种常见动画效果</li>
+					<li>掌握JS闭包机制，面向对象的继承、命名空间，prototype原型，事件委托机制，Ajax，插件扩张，运动原理，瀑布流，能编写各种动态效果</li>
+					<li>熟悉web标准，能手写语义合理、易维护结构层，具有良好兼容性、模块化的表现层与行为层；对网页性能优化、SEO有一定的了解</li>
+					<li>熟悉Emmet、Less、Seajs模块加载器、了解Backbone、Nodejs开发技术</li>
+				</ul>
+			</section>
+			<section class="mod bc_b col">
+				<h2 class="title">PHP+MySQL+Java</h2>
+				<ul class="dot">
+					<li>熟悉php，java面向对象程序设计语言</li>
+					<li>熟悉数据库设计、MySQL数据库操作与优化</li>
+					<li>熟悉面向对象编程，对mvc设计模式有一定的了解</li>
+					<li>熟悉Smarty模板、ThinkPHP框架技术、wordpress</li>
+					<li>熟练基于php实现的CMS网站模版定制</li>
+					<li>了解Java Web编程相关知识，如jsp、sevlet、javaBean等</li>
+				</ul>
+			</section>
+			<section class="mod bc_d col">
+				<h2 class="title">方法论</h2>
+				<ul class="dot">
+					<li>W3C标准</li>
+					<li>语义化</li>
+					<li>模块化</li>
+					<li>表现、结构、行为三层分离</li>
+					<li>响应式设计</li>
+					<li>渐进增强、优雅降级</li>
+					<li>MVC</li>
+				</ul>
+			</section>
+		</section>
+	</section>
+
+	<footer class="footer">
+		<section class="cool_website">
+			<ul class="cool_website_items clearfix">
+				<li><a href="http://hao.yixieshi.com/" title="互联网导航" target="_blank">互联网导航</a></li>
+				<li><a href="http://www.w3.org/" title="W3C Standards" target="_blank">W3C Standards</a></li>
+				<li><a href="http://www.whatwg.org" title="WHATWG" target="_blank">WHATWG</a></li>
+				<li><a href="http://quirksmode.org/" title="Quiks Mode" target="_blank">Quiks Mode</a></li>
+				<li><a href="http://www.html5dw.com" title="HTML5梦工厂" target="_blank">HTML5梦工厂</a></li>
+				<li><a href="http://www.w3cplus.com/" title="W3CPlus" target="_blank">W3CPlus</a></li>
+				<li><a href="https://github.com/" title="GitHub" target="_blank">GitHub</a></li>
+				<li><a href="http://stackoverflow.com/" title="Stack Overflow" target="_blank">Stack Overflow</a></li>
+			</ul>
+		</section>
+		<div class="copyright">
+			<p>&copy; 2013 Micro Space</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="./scripts/startMove.js"></script>
+	<script type="text/javascript">
+    (function(){
+		var ie = navigator.userAgent.indexOf('MSIE');
+		if(ie<0){
+			var aProgress = getElementsByClassName("profession","pro_desc");
+			for(var i=0,len=aProgress.length;i<len;i++){
+				progress_load(aProgress[i]);
+			}
+		}		
+        function progress_load(obj){
+            if(!obj){
+                return;
+            }
+            var currentWidth=getStyle(obj,'width');
+            obj.style.width="100px";
+            startMove(obj,{width:parseInt(currentWidth)});
+        };
+    })();
+	</script>
+	<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fdd1aff005bbde590f53015583a947ea3' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

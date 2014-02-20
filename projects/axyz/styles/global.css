@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+/*global reset styles*/
+body,span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; }
+:focus { outline:0; }
+a:active { outline:none; }
+a:link,a:visited,a:hover, a:active { text-decoration:none; }
+ol, ul { list-style:none; }
+table { border-collapse:collapse; border-spacing:0; }
+caption, th, td { text-align:left; font-weight:normal; }
+blockquote:before, blockquote:after, q:before, q:after { content:""; }
+blockquote, q { quotes:"" ""; }
+/*head styles*/
+.head { border: 1px #FFF solid; width:994px; height:121px; margin:0 auto; padding:0; background:url(images/top.png) no-repeat; margin-top:-6px; position:relative; }
+.head table { margin-left:370px; margin-top:98px; }
+.head table tr td { width:90px; height:25px; text-align:center; }
+.head table tr td a { font-size:12px; color:#FFF; font-weight:400; text-decoration:none; display:block; width:85px; height:18px; line-height:18px; }
+.head table tr td a:hover {color:#E3262C;}
+#headfott { float:right; margin-top:60px; margin-right:10px; font-size:13px; height:15px; line-height:15px; }
+.informat { border-right:1px solid #000; padding-right:5px; }
+/*弹出窗口*/
+#win { border:1px solid #999; width: 320px; position: absolute; top: 150px; left: 550px; display: none; z-index:2000; background-color:#FFF; }
+/*控制标题栏的样式*/
+#title {  background-color:#999; color: #000; font-size:14px; padding-left:10px; height:30px; padding-top:8px; font-weight:bold; }
+#tip { float:left; }
+/*控制内容区域的样式*/ 
+#content { margin:30px; }
+.id, .pwd, .btn { width:260px; height:40px; margin-bottom:4px; }
+.id label, .pwd label { display:block; width:60px; float:left; text-align:right; height:20px; line-height:20px; margin-right:5px; cursor:pointer; }
+.id input, .pwd input { display:block; width:180px; float:right; text-align:left; height:20px; line-height:20px; border:1px solid #666; vertical-align:middle; padding:2px; }
+.btn { text-align:center; }
+.btn input { margin-right:10px; background:transparent; border:1px solid #666; background-color:#CCC; width:40px; height:20px; cursor:pointer; line-height:20px; text-align:center; }
+/*控制关闭按钮的位置*/
+#close { float:right; cursor: pointer; color:#F00; margin-right:10px; }
+/*页脚样式*/
+.foot{ border:1px  #FFF solid; width:994px; height:100px; margin:0 auto; padding:0px; background: url(images/buttom_bg.jpg) repeat-x; }
+.foot_left{ border: 0px; width:36px; height:66px; background: url(images/footbg.gif) left top no-repeat;}
+.foot_right{ border: 1px; width:36px; height:66px; background: url(images/footbg.gif) right top no-repeat; z-index:1px; float:right; margin-top:-66px;}
+.property{ margin-left:400px; color:#999; font-size:12px;}
+/*loging dialog*/
+.showLogBg { margin: 0; padding: 0; position: absolute; width: 100%; height: 1100px; left: 0; top: 0; z-index: 500; }
+.showLog { margin: 0; padding: 0; position: absolute; width: 430px; left: 500px; top: 200px; z-index: 1000; }
+.showLog_Top { background: url(./images/login_top.gif) no-repeat; height: 6px; font-size: 0; }
+.showLog_content { background: url(./images/login_center.gif) repeat-y; padding: 10px; }
+.denglu { text-align: center; font-size: 18px; color: #e56227; height: 25px; }
+#closeImg { display: block; position: absolute; top: 8px; right: 8px; cursor: pointer; }
+.form1 { clear: both; }
+.name label, .passwd label, .checkV label { display: block; float: left; text-align: right; width: 80px; margin-right: 5px; height: 29px; line-height: 29px; cursor: pointer; }
+.name input, .passwd input { display: block; float: left; height: 29px; line-height: 29px; width: 192px; border: none; vertical-align: middle; }
+.checkV input { display: block; float: left; height: 27px; line-height: 27px; width: 95px; border: none; vertical-align: middle; }
+.id1, .passwd1 { background: url(./images/InputBgs.gif) no-repeat 0 -33px; }
+.id1Active, .passwd1Active { background: url(./images/InputBgs.gif) no-repeat 0 -67px; }
+.checkV1 { background: url(./images/InputBgs.gif) no-repeat 0 0; }
+.checkV1Active { background: url(./images/InputBgs.gif) no-repeat -97px 0; }
+.name, .passwd, .checkV { overflow: hidden; }
+.passwd, .checkV, .picCheckV { clear: both; padding-top: 10px; }
+.picCheckV { margin-left: 80px; margin-bottom: 5px; }
+.picCheckV a { color: #000; text-decoration: none; }
+.picCheckV a:hover { color: #F96; }
+.submit1 input { border: none; display: block; font-size: 0; background: url(./images/login_submit.gif) no-repeat; width: 183px; height: 34px; margin: 0 auto; margin-bottom: 5px; cursor: pointer; }
+.register { margin: 0 auto; width: 183px; background: url(./images/login_or.gif) no-repeat; padding-top: 8px; text-align: center; }
+.register p { height: 25px; }
+.register a { display: block; width: 183px; height: 34px; }
+.showLog_Bottom { background: url(./images/login_bottom.gif) no-repeat; height: 6px; font-size: 0; width: 430px; }
