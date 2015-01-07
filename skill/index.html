@@ -2,52 +2,52 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Micro Space→Web Front-End Developer</title>
+	<title>Frontend Developer House</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<link rel="stylesheet" href="./styles/global.css" type="text/css">
+	<link rel="stylesheet" href="../styles/global.css" type="text/css">
 	<!--[if lte IE 9]>
-		<script src="./scripts/html5.js" type="text/javascript"></script>
+		<script src="../scripts/html5.js" type="text/javascript"></script>
 	<![endif]-->
 </head>
 <body>
 	<header class="header">
-		<div class="auto pt_15 clearfix">
-			<h1 class="logo">Micro Space→Web Front-End Developer</h1>
+		<div class="auto pt-15 clearfix">
+			<h1 class="logo">Frontend Developer House</h1>
 			<nav class="menu">
-				<ul class="menu_items" id="menu">
-					<li><a href="./index.html">首页<span>HOME</span></a></li>
-					<li class="current"><a href="./skill.html">技能<span>SKILL</span></a></li>
-					<li><a href="./practice.html">实践<span>PRACTICE</span></a></li>
-					<li><a href="./contact.html">联系<span>CONTACT</span></a></li>
+				<ul class="menu-items" id="menu">
+					<li><a href="../index/">首页<span>HOME</span></a></li>
+					<li class="current"><a href="../skill/">技能<span>SKILL</span></a></li>
+					<li><a href="../practice/">实践<span>PRACTICE</span></a></li>
+					<li><a href="../contact/">联系<span>CONTACT</span></a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-	<section class="bg_skill">
+	<section class="bg-skill">
 		<section class="auto clearfix">
-			<section class="mod bc_a col">
+			<section class="mod bc-a col">
 				<h2 class="title">职业素养</h2>
 				<ul class="profession" id="profession">
 					<li>
-						<div class="pro_desc" style="width:100%;"><h3>学习能力</h3></div>
-						<div class="pro_progress">100%</div>
+						<div class="pro-desc" style="width:100%;"><h3>学习能力</h3></div>
+						<div class="pro-progress">100%</div>
 					</li>
 					<li>
-						<div class="pro_desc" style="width:90%;"><h3>专业能力</h3></div>
-						<div class="pro_progress">90%</div>
+						<div class="pro-desc" style="width:90%;"><h3>专业能力</h3></div>
+						<div class="pro-progress">90%</div>
 					</li>
 					<li>
-						<div class="pro_desc" style="width:60%;"><h3>英语能力</h3></div>
-						<div class="pro_progress">60%</div>
+						<div class="pro-desc" style="width:60%;"><h3>英语能力</h3></div>
+						<div class="pro-progress">60%</div>
 					</li>
 					<li>
-						<div class="pro_desc" style="width:100%;"><h3>团队合作</h3></div>
-						<div class="pro_progress">100%</div>
+						<div class="pro-desc" style="width:100%;"><h3>团队合作</h3></div>
+						<div class="pro-progress">100%</div>
 					</li>
 				</ul>
 			</section>
-			<section class="mod bc_c col">
+			<section class="mod bc-c col">
 				<h2 class="title">HTML(5)+CSS(3)+JavaScript</h2>
 				<ul class="dot">
 					<li>熟练使用PhotoShop图像处理工具，能够对设计图精确切图</li>
@@ -59,7 +59,7 @@
 					<li>熟悉Emmet、Less、Seajs模块加载器、了解Backbone、Nodejs开发技术</li>
 				</ul>
 			</section>
-			<section class="mod bc_b col">
+			<section class="mod bc-b col">
 				<h2 class="title">PHP+MySQL+Java</h2>
 				<ul class="dot">
 					<li>熟悉php，java面向对象程序设计语言</li>
@@ -70,7 +70,7 @@
 					<li>了解Java Web编程相关知识，如jsp、sevlet、javaBean等</li>
 				</ul>
 			</section>
-			<section class="mod bc_d col">
+			<section class="mod bc-d col">
 				<h2 class="title">方法论</h2>
 				<ul class="dot">
 					<li>W3C标准</li>
@@ -86,8 +86,8 @@
 	</section>
 
 	<footer class="footer">
-		<section class="cool_website">
-			<ul class="cool_website_items clearfix">
+		<section class="cool-website">
+			<ul class="cool-website-items clearfix">
 				<li><a href="http://hao.yixieshi.com/" title="互联网导航" target="_blank">互联网导航</a></li>
 				<li><a href="http://www.w3.org/" title="W3C Standards" target="_blank">W3C Standards</a></li>
 				<li><a href="http://www.whatwg.org" title="WHATWG" target="_blank">WHATWG</a></li>
@@ -99,15 +99,15 @@
 			</ul>
 		</section>
 		<div class="copyright">
-			<p>&copy; 2013 Micro Space</p>
+			<p>&copy; 2013 yunxiange</p>
 		</div>
 	</footer>
-	<script type="text/javascript" src="./scripts/startMove.js"></script>
+	<script type="text/javascript" src="../scripts/startMove.js"></script>
 	<script type="text/javascript">
     (function(){
 		var ie = navigator.userAgent.indexOf('MSIE');
 		if(ie<0){
-			var aProgress = getElementsByClassName("profession","pro_desc");
+			var aProgress = getElementsByClassName("profession","pro-desc");
 			for(var i=0,len=aProgress.length;i<len;i++){
 				progress_load(aProgress[i]);
 			}
